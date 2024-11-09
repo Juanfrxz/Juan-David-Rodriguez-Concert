@@ -93,7 +93,7 @@ body {
     flex-direction: column;
     position: absolute;
     margin-top: 185%;
-    left: 33%;
+    left: 28%;
 }
 
 .link-info{
@@ -132,18 +132,4 @@ body {
 .event-item { animation: event-item  infinite 2s ease-in-out }
 @keyframes event-item  {
     50% { transform: translateY(30px) }
-}
-
-@media (min-width: 1024px) {
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-}
-
-@media (min-width: 768px) {
-    .container{
-        max-width: 1260px;
-    }
 }
