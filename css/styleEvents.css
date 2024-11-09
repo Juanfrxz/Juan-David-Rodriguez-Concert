@@ -105,21 +105,23 @@ body {
       margin: 0 5px;
     }
   }
-
-.carousel-item-all::-webkit-scrollbar {
+.carousel a{
+  text-decoration: none;
+}
+.carousel-item-button::-webkit-scrollbar {
   display: none; 
 }
-.carousel-item-all > div {
+.carousel-item-button > div {
   flex: 0 0 auto; 
 }
 
-.carousel-item-all {
+.carousel-item-button {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
 }
 
-.carousel-item-button1 a{
+.carousel-button1 a{
   background: #EDE9FF;
   color: black;
   padding: 10px 20px;
@@ -131,7 +133,7 @@ body {
   text-decoration: none;
 }
 
-.carousel-item-button2 a{
+.carousel-button2 a{
   background: #FFF5D7;
   color: black;
   padding: 10px 20px;
@@ -142,7 +144,7 @@ body {
   text-decoration: none;
 }
 
-.carousel-item-button3 a{
+.carousel-button3 a{
   background: #FFECEC;
   color: black;
   padding: 10px 20px;
@@ -153,7 +155,7 @@ body {
   text-decoration: none;
 }
 
-.carousel-item-button4 a{
+.carousel-button4 a{
   background: #E4FFEA;
   color: black;
   padding: 10px 20px;
@@ -265,8 +267,8 @@ body {
 }
 
 .event-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    display: flex;
+    padding: 0 100px;
 }
+
 
