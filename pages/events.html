@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
     <link rel="stylesheet" href="../css/styleEvents.css">
-    <script type="module" src="../js/notification.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -19,11 +18,6 @@
                 <div class="notify-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
                 </div>
-                <ul class="notify-area">
-                    <li>Example</li>
-                    <li>Other Example</li>
-                    <li>Click Outside to Close</li>
-                </ul>
             </div>
         </header>
         <div class="search-bar">
@@ -31,10 +25,20 @@
             <div class="filter-icon">⚙️</div>
         </div>
         <div class="categories">
-            <button>Music Concert</button>
-            <button>Exhibition</button>
-            <button>Stand Up Show</button>
-            <button>Theater</button>
+            <div class="carousel-item-all">
+                <div class="carousel-item-button1"> 
+                    <a href="#">Music Concert</a>
+                </div>
+                <div class="carousel-item-button2">
+                    <a href="#">Exhibition</a>
+                </div>
+                <div class="carousel-item-button3">
+                    <a href="#">Stand Up Show</a>
+                </div>
+                <div class="carousel-item-button4">
+                    <a href="#">Theater</a>
+                </div>
+              </div>
         </div>
         <section class="trending-events">
             <div class="section-header">
@@ -43,6 +47,7 @@
             </div>
             <div class="carousel">
                 <div class="carousel-item">
+                    <a href="datailsEvent.html">
                     <div class="event-card large-card">
                         <img src="../images/Frame 34616.png" alt="Trending Event">
                         <div class="event-info">
@@ -51,9 +56,11 @@
                             <p>November 15 2023</p>
                             <span>Start from IDR1,100,000</span>
                         </div>
+                    </a>
                     </div>
                 </div>
                 <div class="carousel-item">
+                    <a href="datailsEvent.html">
                     <div class="event-card large-card">
                         <img src="../images/Frame 34616.png" alt="Trending Event">
                         <div class="event-info">
@@ -62,12 +69,13 @@
                             <p>November 15 2023</p>
                             <span>Start from IDR1,100,000</span>
                         </div>
-                </div>
-                <div class="carousel-item"></div>
-                <div class="carousel-item"></div>
-                <div class="carousel-item"></div>
-              </div>
-            
+                    </a>
+                    </div>
+                    <div class="carousel-item"></div>
+                    <div class="carousel-item"></div>
+                    <div class="carousel-item"></div>
+                    </div>
+
         </section>
         <section class="nearby-events">
             <div class="section-header">

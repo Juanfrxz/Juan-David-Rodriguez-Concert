@@ -4,47 +4,31 @@
 * {
   padding: 0;
   margin: 0;
-  
   box-sizing: border-box;
-  
   font-family: Poppins, sans-serif;
 }
 
 body {
   background-color: #fafafa;
-  
   min-height: 100vh;
-  
   display: flex;
-  
   align-items: center;
   justify-content: center;
-}
-
-.dropdown-area {
-  display: flex;
-  flex-direction: column;
 }
 
 .notify-button {
   background-color: #ffffff;
-  
   width: 3.5rem;
   height: 3.5rem;
-  
   border-radius: 3.5rem;
-  
   display: flex;
-  
   align-items: center;
+  flex-direction: column; 
   justify-content: center;
-  
   align-self: flex-end;
-  
   cursor: pointer;
-  
+  margin-top: -100%;
   transition: all 0.2s ease;
-  
   box-shadow:
   0 1.1px 2.2px rgba(0, 0, 0, 0.014),
   0 2.7px 5.3px rgba(0, 0, 0, 0.02),
@@ -65,14 +49,9 @@ body {
 
 .notify-area {
   background-color: #ffffff;
-  
   border-radius: 0.3rem;
-  
   display: flex;
   flex-direction: column;
-  
-  margin-top: 0.5rem;
-  
   box-shadow:
   0 1.1px 2.2px rgba(0, 0, 0, 0.014),
   0 2.7px 5.3px rgba(0, 0, 0, 0.02),
@@ -80,16 +59,13 @@ body {
   0 8.9px 17.9px rgba(0, 0, 0, 0.03),
   0 16.7px 33.4px rgba(0, 0, 0, 0.036),
   0 40px 80px rgba(0, 0, 0, 0.05);
-  
   visibility: hidden;
-  
   transition: visibility 0.2s ease-in;
 }
 
 .notify-area li {
   list-style: none;
   padding: 1rem 2rem;
-  
   transition: background-color 0.1s ease;
 }
 
@@ -107,12 +83,13 @@ body {
 
 .menu-icon{
     background-color: #ffffff;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 3.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
   display: flex;
   align-items: flex-start;
   cursor: pointer;
+  margin-top: -10%;
 }
 
 .carousel {
@@ -120,14 +97,72 @@ body {
     flex-direction: row;
     height: 310px;
     overflow-x: scroll;
-    
-    .carousel-item {
+
+    & > .carousel-item {
       flex: 1;
       flex-grow: 1;
       min-width: 90%;
       margin: 0 5px;
     }
   }
+
+.carousel-item-all::-webkit-scrollbar {
+  display: none; 
+}
+.carousel-item-all > div {
+  flex: 0 0 auto; 
+}
+
+.carousel-item-all {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.carousel-item-button1 a{
+  background: #EDE9FF;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.9em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.carousel-item-button2 a{
+  background: #FFF5D7;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.carousel-item-button3 a{
+  background: #FFECEC;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.carousel-item-button4 a{
+  background: #E4FFEA;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+  text-decoration: none;
+}
 
 .app-container {
     width: 90%;
@@ -141,19 +176,19 @@ body {
 }
 
 .header .title h1 {
-    font-size: 1.5em;
-    margin-bottom: -5px;
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+    margin-top: 25%;
 }
 
 .header .title h2 {
-    font-size: 1.2em;
-    color: purple;
+    font-size: 2em;
+    color: #9333ea;
+    line-height: 1.2; 
+    margin: 0;
 }
 
-.title{
-    display: flex;
-    
-}
 
 .search-bar {
     display: flex;
@@ -174,19 +209,12 @@ body {
 
 .categories {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
     margin-bottom: 20px;
+
 }
 
-.categories button {
-    padding: 10px 15px;
-    background: #f3f3f3;
-    border: none;
-    border-radius: 20px;
-    color: #555;
-    font-size: 0.9em;
-}
 
 .section-header {
     display: flex;
