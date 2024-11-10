@@ -95,7 +95,7 @@ body {
 .carousel {
     display: flex;
     flex-direction: row;
-    height: 310px;
+    height: 200px;
     overflow-x: scroll;
 
     & > .carousel-item {
@@ -266,10 +266,42 @@ body {
     font-weight: bold;
 }
 
+.carousel-item {
+  position: relative;
+}
+
+.event-info1 {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  width: 90%;
+  background-color: #2D264B80;
+  backdrop-filter: blur(14px);
+  color: white;
+  padding: 1px 24px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.event-title1 {
+  font-size: 1em;
+}
+
+.event-details1, .event-price1 {
+  font-size: 0.9em;
+}
+
 .event-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
-
+:root {
+  --ratio: 3.74;
+  --cta-color: rgb(0, 102, 254);
+  --light-color-bg: rgb(238, 241, 247);
+  --dark-color-bg: rgb(55, 65, 81);
+  --grey-color: rgb(107, 114, 128);
+  --leading: 0.025em;
+}

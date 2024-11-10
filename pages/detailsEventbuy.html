@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coldplay Ticket</title>
+    <link rel="stylesheet" href="../css/detailsEventBuy.css">
+    <script type="module" src="../js/bar-code.js"></script>
+</head>
+<body>
+    <div class="ticket-container">
+        <header class="nav-header">
+            <a href="events.html" class="btn_back"><button class="back-btn">←</button></a>
+            <button class="menu-btn">⋮</button>
+        </header>
+        
+        <div class="ticket-card">
+            <div class="event-image">
+                <img src="../images/img-home-carousel.png" alt="Coldplay Concert">
+            </div>
+            
+            <div class="event-details">
+                <h1>Coldplay : Music of the Spheres</h1>
+                <p class="event-location">Nov 15 2023 - Gelora Bung Karno Stadium, Jakarta</p>
+                
+                <div class="ticket-info">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <span class="label">Name</span>
+                            <span class="value">Indriyani Puspita</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Order Number</span>
+                            <span class="value">CLD09738PL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-row">
+                        <div class="info-item">
+                            <span class="label">Date</span>
+                            <span class="value">Nov 15 2023</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Time</span>
+                            <span class="value">9:00 PM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-row">
+                        <div class="info-item">
+                            <span class="label">Gate</span>
+                            <span class="value">Yellow</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Seat</span>
+                            <span class="value">West B</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="barcode-section">
+                    <div class="barcode">
+                        <svg id="barcode"></svg>
+                    </div>
+                    <p class="scan-text">Scan your barcode at the entry gate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
