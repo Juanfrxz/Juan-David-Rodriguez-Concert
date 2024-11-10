@@ -19,7 +19,8 @@ body {
     margin-bottom: 20px;
 }
 
-.back-btn, .menu-btn {
+.back-btn,
+.menu-btn {
     background: #FFFFFF;
     border: none;
     border-radius: 10%;
@@ -33,13 +34,13 @@ body {
     backdrop-filter: blur(15px);
 }
 
-.btn_back{
+.btn_back {
     text-decoration: none;
 }
 
 .ticket-card {
     background: white;
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
@@ -110,7 +111,7 @@ h1 {
 .barcode {
     width: 100%;
     height: 80px;
-    margin-bottom: 12px;
+    margin-bottom: 80px;
 }
 
 .barcode img {
@@ -123,4 +124,135 @@ h1 {
     color: #666;
     font-size: 13px;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #e0e6ff 0%, #d9e1ff 100%);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    .ticket-container {
+        max-width: 430px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .nav-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    .back-btn,
+    .menu-btn {
+        background: #FFFFFF;
+        border: none;
+        border-radius: 10%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(15px);
+    }
+
+    .btn_back {
+        text-decoration: none;
+    }
+
+    .ticket-card {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .event-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .event-details {
+        padding: 24px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: #1a1a1a;
+    }
+
+    .event-location {
+        color: #666;
+        font-size: 14px;
+        margin: 8px 0 24px;
+    }
+
+    .ticket-info {
+        margin-bottom: 24px;
+    }
+
+    .info-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .info-item {
+        flex: 1;
+    }
+
+    .label {
+        display: block;
+        color: #666;
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+
+    .value {
+        display: block;
+        color: #1a1a1a;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .barcode-section {
+        padding-top: 24px;
+        border-top: 1px dashed #ddd;
+        text-align: center;
+    }
+
+    .barcode {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 80px;
+    }
+
+    .barcode img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .scan-text {
+        color: #666;
+        font-size: 13px;
+        margin: 0;
+    }
 }
