@@ -110,6 +110,7 @@
     padding: 20px;
     border-top: 1px solid #eee;
     background: #ffffff;
+    margin-left: 10%;
   }
 
   .purchase-section span {
@@ -119,10 +120,9 @@
   }
 
   .purchase-section span b {
-    color: #666;
-    font-weight: normal;
+    font-size: 1.2rem;
   }
-
+ 
   .buy-ticket {
     background-color: #6a1b9a;
     color: white;
@@ -374,8 +374,7 @@ body {
 }
 
 .purchase-section span b {
-  color: #666;
-  font-weight: normal;
+  font-size: 1.2rem;
 }
 
 .buy-ticket {

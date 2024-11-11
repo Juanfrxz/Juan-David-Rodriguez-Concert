@@ -140,140 +140,140 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(100deg, #DEFDFF, #FFB9EB);
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+background: linear-gradient(100deg, #DEFDFF, #FFB9EB);
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: 1fr 2fr;
-    margin: 1rem auto;
+display: flex;
+flex-direction: row;
+grid-template-columns: 1fr 2fr;
+margin: 1rem auto;
 }
 
 .info-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: #8a2be2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+color: #8a2be2;
 }
 
 .event-item {
-    position: relative;
-    font-weight: bold;
-    color: #9333ea;
-    margin: 0;
+position: relative;
+font-weight: bold;
+color: #9333ea;
+margin: 0;
 }
 
 .event-item::after {
-    content: 'EVENTO';
-    position: absolute;
-    left: 0;
-    bottom: -40%;
-    background: linear-gradient(to bottom, #9333ea 0%, transparent 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    opacity: 0.5;
+content: 'EVENTO';
+position: absolute;
+left: 0;
+bottom: -40%;
+background: linear-gradient(to bottom, #9333ea 0%, transparent 100%);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+opacity: 0.5;
 }
 
 
 
 .info-section h1 {
-    font-size: 3em;
-    font-weight: bold;
+font-size: 3em;
+font-weight: bold;
 }
 
 .info-section p {
-    font-size: 1.2em;
-    margin-top: 20px;
+font-size: 1.2em;
+margin-top: 20px;
 }
 
 .social-media {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: auto;
-    margin-top: 10px;
+display: flex;
+flex-direction: row;
+align-items: center;
+height: auto;
+margin-top: 10px;
 }
 
 .social-media p {
-    font-size: 1.2em;
-    margin: 0%;
-    color: #8a2be2;
+font-size: 1.2em;
+margin: 0%;
+color: #8a2be2;
 }
 
 .social-media img {
-    display: flex;
-    position: relative;
-    left: -2%;
-    margin: 0%;
-    width: 40px;
-    height: 40px;
+display: flex;
+position: relative;
+left: -2%;
+margin: 0%;
+width: 40px;
+height: 40px;
 }
 
 .cover-img {
-    display: flex;
-    width: 600px;
-    position: absolute;
-    bottom: 20%;
-    left: -20%;
+display: flex;
+width: 600px;
+position: absolute;
+bottom: 20%;
+left: 20%;
 }
 
 .link-item {
-    position: absolute;
-    margin-top: 190%;
-    left: 30%;
+position: absolute;
+margin-top: 190%;
+left: 30%;
 }
 
 .link-info {
-    display: flex;
-    font-family: Arial, sans-serif;
-    font-size: 1.5rem;
-    background-color: #8a2be2;
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: background-color 0.6s;
+display: flex;
+font-family: Arial, sans-serif;
+font-size: 1.5rem;
+background-color: #8a2be2;
+text-decoration: none;
+color: white;
+padding: 5px 10px;
+border-radius: 5px;
+font-weight: bold;
+margin-top: 10px;
+transition: background-color 0.6s;
 }
 
 .link-info:hover {
-    color: #8a2be2;
-    background-color: #ffffff;
+color: #8a2be2;
+background-color: #ffffff;
 }
 
 .screens-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
 }
 
 .screen {
-    width: 100px;
-    height: 200px;
-    background: #ddd;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+width: 100px;
+height: 200px;
+background: #ddd;
+border-radius: 20px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .event-item {
-    animation: event-item infinite 2s ease-in-out
+animation: event-item infinite 2s ease-in-out
 }
 
 @keyframes event-item {
-    50% {
-        transform: translateY(30px)
-    }
+50% {
+transform: translateY(30px)
+}
 }

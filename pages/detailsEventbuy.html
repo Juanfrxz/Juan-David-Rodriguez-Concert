@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coldplay Ticket</title>
     <link rel="stylesheet" href="../css/detailsEventBuy.css">
     <script src="../js/JsBarcode.all.min.js"></script>
     <script type="module">JsBarcode("#barcode", "X0048MINSD");</script>
+    <script type="module" src="../js/scrip.js"></script>
+    <title>Coldplay Ticket</title>
 
 </head>
 
 <body>
     <div class="ticket-container">
-        <header class="nav-header">
-            <a href="events.html" class="btn_back"><button class="back-btn">←</button></a>
-            <button class="menu-btn">⋮</button>
-        </header>
+        <div class="purchase-section">
+            <a href="datailsEvent.html" class="btn_back" id="open_dialog">←</a>
+        </div>
+
 
         <div class="ticket-card">
             <div class="event-image">
