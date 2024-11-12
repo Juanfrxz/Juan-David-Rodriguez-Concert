@@ -274,9 +274,11 @@
 
   .event-info1 {
     position: absolute;
+    font-size: 0.8rem;
     top: 90px;
-    left: 20px;
-    width: 90%;
+    left: 30px;
+    width: 80%;
+    height: 40%;
     background-color: #2D264B80;
     backdrop-filter: blur(14px);
     color: white;
@@ -383,20 +385,6 @@
       font-size: 0.9em;
       cursor: pointer;
       text-decoration: none;
-    }
-
-    .carousel {
-      display: flex;
-      flex-direction: row;
-      height: 260px;
-      overflow-x: scroll;
-  
-      &>.carousel-item {
-        flex: 1;
-        flex-grow: 1;
-        min-width: 100%;
-        margin: 0 5px;
-      }
     }
 
     .header {
