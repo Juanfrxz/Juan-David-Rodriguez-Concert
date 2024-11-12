@@ -58,6 +58,10 @@
     color: #000;
   }
 
+  .purple-text{ 
+    color: #761CBC;
+  }
+
   .event-info-card p {
     margin: 8px 0;
     color: #666;
@@ -215,6 +219,7 @@
 
   dialog {
     border: none !important;
+    
     border-radius: calc(5px * var(--ratio));
     box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     padding: 1.6rem;
@@ -426,10 +431,11 @@
   }
 
   dialog img {
-    display: block;
-    max-width: 75%;
-    margin: 1rem 0 auto 2rem;
-  }
+    display: flex;
+    max-width: 80%;
+    margin: 10px 10%;
+    border-radius: 10px;
+    }
 
   .h1 {
     margin: 2rem 0 1rem;

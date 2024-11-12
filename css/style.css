@@ -1,4 +1,74 @@
-@media (max-width: 768px) {
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    background-color: white;
+}
+
+@media (min-width: 1024px) {
+    body {
+        width: 100vh;
+        height: 100vh;
+        font-size: 30px;
+        background: linear-gradient(to bottom right, #DEFDFF, rgb(255, 185, 235));
+        overflow: hidden;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #A626B1;
+        margin-top: 35%;
+    }
+
+    .button {
+        text-decoration: none;
+        color: black;
+        border: 2px solid rgb(255, 185, 235);
+        border-radius: 0 20px 0 20px;
+        padding: 9px 36px;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 rgb(255, 115, 215);
+        -webkit-transition: ease-out 1s;
+        -moz-transition: ease-out 1s;
+        transition: ease-out 1s;
+    }
+
+    .button:hover {
+        box-shadow: inset 400px 0 0 0 rgb(255, 115, 215);
+    }
+
+    .main-img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 90%;
+        bottom: 100%;
+    }
+
+    .ttl {
+            margin-bottom: 1%;
+        animation: ttl infinite 2s ease-in-out
+    }
+
+    @keyframes ttl {
+        50% {
+            transform: translateY(30px)
+        }
+    }
+}
+
+/* @media (max-width: 768px) {
     * {
         margin: 0;
         padding: 0;
@@ -86,7 +156,7 @@
         width: 600px;
         position: absolute;
         bottom: 20%;
-        left: -20%;
+        margin-left: -40%;
     }
 
     .link-item {
@@ -137,143 +207,140 @@
             transform: translateY(30px)
         }
     }
-}
-
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-background: linear-gradient(100deg, #DEFDFF, #FFB9EB);
-}
-
-.container {
-display: flex;
-flex-direction: row;
-grid-template-columns: 1fr 2fr;
-margin: 1rem auto;
-}
-
-.info-section {
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-color: #8a2be2;
-}
-
-.event-item {
-position: relative;
-font-weight: bold;
-color: #9333ea;
-margin: 0;
-}
-
-.event-item::after {
-content: 'EVENTO';
-position: absolute;
-left: 0;
-bottom: -40%;
-background: linear-gradient(to bottom, #9333ea 0%, transparent 100%);
--webkit-background-clip: text;
-background-clip: text;
-color: transparent;
-opacity: 0.5;
-}
+} 
 
 
 
-.info-section h1 {
-font-size: 3em;
-font-weight: bold;
-}
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(100deg, #DEFDFF, #FFB9EB);
+    }
 
-.info-section p {
-font-size: 1.2em;
-margin-top: 20px;
-}
+    .container {
+        display: flex;
+        flex-direction: row;
+        grid-template-columns: 1fr 2fr;
+        margin: 1rem auto;
+    }
 
-.social-media {
-display: flex;
-flex-direction: row;
-align-items: center;
-height: auto;
-margin-top: 10px;
-}
+    .info-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: #8a2be2;
+    }
 
-.social-media p {
-font-size: 1.2em;
-margin: 0%;
-color: #8a2be2;
-}
+    .event-item {
+        position: relative;
+        font-weight: bold;
+        color: #9333ea;
+        margin: 0;
+    }
 
-.social-media img {
-display: flex;
-position: relative;
-left: -2%;
-margin: 0%;
-width: 40px;
-height: 40px;
-}
+    .event-item::after {
+        content: 'EVENTO';
+        position: absolute;
+        left: 0;
+        bottom: -40%;
+        background: linear-gradient(to bottom, #9333ea 0%, transparent 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        opacity: 0.5;
+    }
 
-.cover-img {
-display: flex;
-width: 600px;
-position: absolute;
-bottom: 20%;
-left: 20%;
-}
 
-.link-item {
-position: absolute;
-margin-top: 190%;
-left: 30%;
-}
 
-.link-info {
-display: flex;
-font-family: Arial, sans-serif;
-font-size: 1.5rem;
-background-color: #8a2be2;
-text-decoration: none;
-color: white;
-padding: 5px 10px;
-border-radius: 5px;
-font-weight: bold;
-margin-top: 10px;
-transition: background-color 0.6s;
-}
+    .info-section h1 {
+        font-size: 3em;
+        font-weight: bold;
+    }
 
-.link-info:hover {
-color: #8a2be2;
-background-color: #ffffff;
-}
+    .info-section p {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
 
-.screens-section {
-display: flex;
-justify-content: space-around;
-align-items: center;
-}
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        margin-top: 10px;
+    }
 
-.screen {
-width: 100px;
-height: 200px;
-background: #ddd;
-border-radius: 20px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+    .social-media p {
+        font-size: 1.2em;
+        margin: 0%;
+        color: #8a2be2;
+    }
 
-.event-item {
-animation: event-item infinite 2s ease-in-out
-}
+    .social-media img {
+        display: flex;
+        position: relative;
+        left: -2%;
+        margin: 0%;
+        width: 40px;
+        height: 40px;
+    }
 
-@keyframes event-item {
-50% {
-transform: translateY(30px)
-}
-}
+    .cover-img {
+        display: flex;
+        width: 600px;
+        position: absolute;
+        bottom: 20%;
+        left: 20%;
+    }
+
+    .link-item {
+        position: absolute;
+        margin-top: 190%;
+        left: 30%;
+    }
+
+    .link-info {
+        display: flex;
+        font-family: Arial, sans-serif;
+        font-size: 1.5rem;
+        background-color: #8a2be2;
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 10px;
+        transition: background-color 0.6s;
+    }
+
+    .link-info:hover {
+        color: #8a2be2;
+        background-color: #ffffff;
+    }
+
+    .screens-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .screen {
+        width: 100px;
+        height: 200px;
+        background: #ddd;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .event-item {
+        animation: event-item infinite 2s ease-in-out
+    }
+
+    @keyframes event-item {
+        50% {
+            transform: translateY(30px)
+        }
+    }
+} */
