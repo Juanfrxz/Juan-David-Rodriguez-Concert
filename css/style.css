@@ -42,7 +42,7 @@ body {
         font-size: 14px;
         letter-spacing: 1px;
         cursor: pointer;
-        box-shadow: zzzzzzzzzzzzzzzzzzzzzzzzlinear-gradient(to bottom right, #DEFDFF, rgb(255, 185, 235));
+        box-shadow: linear-gradient(to bottom right, #DEFDFF, rgb(255, 185, 235));
         -webkit-transition: ease-out 1s;
         -moz-transition: ease-out 1s;
         transition: ease-out 1s;
@@ -50,7 +50,7 @@ body {
     }
 
     .button:hover {
-        box-shadow: inset 400px 0 0 0 rgb(255, 115, 215);
+        box-shadow: inset 400px 0 0 0 #A626B1;
     }
 
     .decoration-img{
