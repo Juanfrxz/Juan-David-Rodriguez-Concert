@@ -48,5 +48,4 @@ La organización y promoción de eventos enfrenta varios retos, como la visibili
 ## 📌 Link De La Pagina
 
 1. Link:
-   ```bash
-   
+   https://event-concert-proyect.netlify.app/
