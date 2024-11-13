@@ -41,7 +41,7 @@ La organización y promoción de eventos enfrenta varios retos, como la visibili
 
 - **HTML5**: Estructura del proyecto.
 - **CSS3**: Estilizado y diseño.
-- **JavaScript**: Funcionalidad interactiva y lógica de la aplicación.
+- **JavaScript**: Funcionalidad interactiva.
 
 ---
 

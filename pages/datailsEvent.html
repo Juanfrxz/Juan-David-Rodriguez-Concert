@@ -4,58 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos CSS externa -->
     <link rel="stylesheet" href="../css/detailsEvent.css">
+    <!-- Icono de la página que aparece en la pestaña del navegador -->
     <link rel="shortcut icon" href="../images/hand-icon-img.png" type="image/x-icon">
+    <!-- Enlace al archivo de script JavaScript como módulo -->
     <script type="module" src="../js/scrip.js"></script>
     <title>Cold Play</title>
 </head>
 
 <body>
+    <!-- Contenedor principal de la página del evento -->
     <div class="event-page">
+        <!-- Sección de imagen de cabecera del evento -->
         <div class="header-image">
-            <img src="../images/coldplay-max-quality.png" alt="Evento">
+            <img src="../images/coldplay-max-quality.png" alt="Evento"> <!-- Imagen principal del evento -->
         </div>
 
+        <!-- Botón de regreso a la página de eventos -->
         <a href="events.html"><button class="back-button">←</button></a>
 
+        <!-- Tarjeta de información del evento -->
         <div class="event-info-card">
-            <h3>Coldplay: <span class="purple-text">Music of the Spheres</span></h3>
-            <p><span class="icon">📍</span> Gelora Bung Karno Stadium, Jakarta</p>
-            <p><span class="icon">📅</span> November 15, 2023</p>
-            <p><img src="../images/participantes-img.png" alt="" class="icon"> 50K+ Participants</p>
+            <h3>Coldplay: <span class="purple-text">Music of the Spheres</span></h3> <!-- Título y subtítulo del evento -->
+            <p><span class="icon">📍</span> Gelora Bung Karno Stadium, Jakarta</p> <!-- Ubicación del evento -->
+            <p><span class="icon">📅</span> November 15, 2023</p> <!-- Fecha del evento -->
+            <p><img src="../images/participantes-img.png" alt="" class="icon"> 50K+ Participants</p> <!-- Número de participantes -->
         </div>
 
+        <!-- Sección de descripción del evento -->
         <div class="event-description">
-            <h4>Description</h4>
+            <h4>Description</h4> <!-- Encabezado de la sección de descripción -->
             <p>Integer id augue iaculis, iaculis orci ut, blandit quam. Donec in elit auctor, finibus quam in, phar.
                 Proin id ligula dictum, covalis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdi.
                 Interdum et malesuada fames ac ante ipsum primis in faucibs. Sed posuere egestas nunc ut tempus. Fu
-                ipsum dolor sit amet.</p>
-            <a href="#" class="read-more">Read More..</a>
+                ipsum dolor sit amet.</p> <!-- Texto descriptivo del evento -->
+            <a href="#" class="read-more">Read More..</a> <!-- Enlace para leer más -->
         </div>
 
+        <!-- Sección de ubicación del evento -->
         <div class="event-location">
-            <h4>Venue & Location</h4>
+            <h4>Venue & Location</h4> <!-- Encabezado de la sección de ubicación -->
+            <!-- Mapa embebido de Google Maps para la ubicación del evento -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.02982614245!2d-122.47879946257684!3d37.757760688642115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sco!4v1731181468225!5m2!1ses!2sco"
                 allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" class="load-map"></iframe>
         </div>
 
+        <!-- Sección de compra de entradas -->
         <div class="purchase-section">
+            <!-- Información del precio inicial del evento -->
             <span>Start from <br><b>IDR1.100.000</b></span>
+            <!-- Contenedor principal para la compra del boleto -->
             <main>
+                <!-- Enlace para comprar el boleto que activa el diálogo -->
                 <a href="#" class="buy-ticket" id="open_dialog">Buy Ticket </a>
+                <!-- Elemento dialog para la confirmación de compra -->
                 <dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
+                    <!-- Imagen ilustrativa en el diálogo -->
                     <img src="../images/coldplay.png"
                         alt="Illustration of Location Services" />
+                    <!-- Título del diálogo de confirmación -->
                     <h2 id="dialog_title" class="h2">Do you want to buy the ticket?</h2>
+                    <!-- Descripción del diálogo de confirmación -->
                     <p id="dialog_description">
                         In order to give you the ticket of concert; if you press confirm you will to get the ticket if not
                         you will close to the page.
                     </p>
+                    <!-- Botones de acción dentro del diálogo -->
                     <div class="flex flex-space-between">
+                        <!-- Botón para cerrar el diálogo sin confirmar -->
                         <button id="close_dialog">Back</button>
+                        <!-- Botón de confirmación con enlace a la página de compra de detalles -->
                         <button id="confirm_dialog" class="cta"><a href="detailsEventbuy.html" class="item-cta">Confirm</a></button>
                     </div>
                 </dialog>
@@ -63,4 +84,5 @@
         </div>
     </div>
 </body>
+
 </html>

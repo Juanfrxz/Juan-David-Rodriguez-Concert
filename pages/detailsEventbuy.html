@@ -4,70 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos CSS específica para la página de compra de boletos -->
     <link rel="stylesheet" href="../css/detailsEventBuy.css">
+    <!-- Icono de la página que aparece en la pestaña del navegador -->
     <link rel="shortcut icon" href="../images/hand-icon-img.png" type="image/x-icon">
+    <!-- Script de biblioteca JsBarcode para generar códigos de barras -->
     <script src="../js/JsBarcode.all.min.js"></script>
+    <!-- Inicialización del código de barras con un valor predeterminado -->
     <script type="module">JsBarcode("#barcode", "X0048MINSD");</script>
     <title>Coldplay Ticket</title>
-
 </head>
 
 <body>
+    <!-- Contenedor principal para el diseño de la página del boleto -->
     <div class="ticket-container">
+        <!-- Sección de compra con botón de regreso a la página del evento -->
         <div class="purchase-section">
-            <a href="datailsEvent.html" class="btn_back" id="open_dialog">←</a>
+            <a href="datailsEvent.html" class="btn_back" id="open_dialog">←</a> <!-- Botón para regresar -->
         </div>
 
-
+        <!-- Tarjeta principal de visualización del boleto -->
         <div class="ticket-card">
+            <!-- Imagen del evento para el boleto -->
             <div class="event-image">
-                <img src="../images/coldplaybuy.png" alt="Coldplay Concert">
+                <img src="../images/coldplaybuy.png" alt="Coldplay Concert"> <!-- Imagen ilustrativa del concierto -->
             </div>
 
+            <!-- Sección de detalles del evento -->
             <div class="event-details">
-                <h1>Coldplay : Music of the Spheres</h1>
-                <p class="event-location">Nov 15 2023 - Gelora Bung Karno Stadium, Jakarta</p>
+                <h1>Coldplay : Music of the Spheres</h1> <!-- Nombre del evento/concierto -->
+                <p class="event-location">Nov 15 2023 - Gelora Bung Karno Stadium, Jakarta</p> <!-- Fecha y ubicación del evento -->
 
+                <!-- Información detallada del boleto -->
                 <div class="ticket-info">
+                    <!-- Primera fila de información: nombre y número de orden -->
                     <div class="info-row">
                         <div class="info-item">
-                            <span class="label">Name</span>
-                            <span class="value">Indriyani Puspita</span>
+                            <span class="label">Name</span> <!-- Etiqueta de "Nombre" -->
+                            <span class="value">Indriyani Puspita</span> <!-- Nombre del titular del boleto -->
                         </div>
                         <div class="info-item">
-                            <span class="label">Order Number</span>
-                            <span class="value">CLD09738PL</span>
+                            <span class="label">Order Number</span> <!-- Etiqueta de "Número de Orden" -->
+                            <span class="value">CLD09738PL</span> <!-- Número de orden del boleto -->
                         </div>
                     </div>
 
+                    <!-- Segunda fila de información: fecha y hora del evento -->
                     <div class="info-row">
                         <div class="info-item">
-                            <span class="label">Date</span>
-                            <span class="value">Nov 15 2023</span>
+                            <span class="label">Date</span> <!-- Etiqueta de "Fecha" -->
+                            <span class="value">Nov 15 2023</span> <!-- Fecha del evento -->
                         </div>
                         <div class="info-item">
-                            <span class="label">Time</span>
-                            <span class="value">9:00 PM</span>
+                            <span class="label">Time</span> <!-- Etiqueta de "Hora" -->
+                            <span class="value">9:00 PM</span> <!-- Hora del evento -->
                         </div>
                     </div>
 
+                    <!-- Tercera fila de información: puerta de acceso y asiento -->
                     <div class="info-row">
                         <div class="info-item">
-                            <span class="label">Gate</span>
-                            <span class="value">Yellow</span>
+                            <span class="label">Gate</span> <!-- Etiqueta de "Puerta" -->
+                            <span class="value">Yellow</span> <!-- Puerta asignada para el evento -->
                         </div>
                         <div class="info-item">
-                            <span class="label">Seat</span>
-                            <span class="value">West B</span>
+                            <span class="label">Seat</span> <!-- Etiqueta de "Asiento" -->
+                            <span class="value">West B</span> <!-- Ubicación del asiento asignado -->
                         </div>
                     </div>
                 </div>
 
+                <!-- Sección del código de barras para entrada al evento -->
                 <div class="barcode-section">
+                    <!-- SVG del código de barras generado con JsBarcode -->
                     <div class="barcode">
-                        <svg id="barcode"></svg>
+                        <svg id="barcode"></svg> <!-- Contenedor para el código de barras -->
                     </div>
-                    <p class="scan-text">Scan your barcode at the entry gate.</p>
+                    <p class="scan-text">Scan your barcode at the entry gate.</p> <!-- Instrucción para el uso del código de barras -->
                 </div>
             </div>
         </div>
